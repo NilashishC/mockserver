@@ -1,4 +1,5 @@
 ### Usage
+**Note:** Works with Python 2.7 only.
 ```
 git clone https://github.com/NilashishC/mockserver
 cd mockserver
