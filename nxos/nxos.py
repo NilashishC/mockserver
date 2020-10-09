@@ -65,9 +65,9 @@ class command_show(MockSSH.SSHCommand):
         else:
             # this part only works with vlans now
             if self.args[0] == "running-config":
-                self.writeln(open("runcfg_vlan", "r").read())
+                self.writeln(open("nxos/fixtures/runcfg_vlan", "r").read())
             else:
-                self.writeln(open("show_{0}".format(self.args[0]), "r").read())
+                self.writeln(open("nxos/fixtures/show_{0}".format(self.args[0]), "r").read())
 
         self.exit()
 
